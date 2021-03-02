@@ -38,23 +38,23 @@
 
 6. Adicionar loaders:
 
-6.1: Babel
+  6.1: Babel
 
-```
-  yarn add babel-loader
-```
+  ```
+    yarn add babel-loader
+  ```
 
-6.2 Styles
+  6.2 Styles
 
-```
-  yarn add style-loader css-loader
-```
+  ```
+    yarn add style-loader css-loader
+  ```
 
-6.3 Images
-
-```
-  yarn add file-loader
-```
+  6.3 Images
+ 
+  ```
+    yarn add file-loader
+  ```
 
 7. Criar pasta public com um arquivo index.html:
 
@@ -62,39 +62,39 @@
   `! + enter` para criar a estrutura inicial html
 ```
 
-7.1 Adicionar elemento root e script na tag <body>
+  7.1 Adicionar elemento root e script na tag <body>
 
-```
-  <div id="app"></div>
-  <script src="bundle.js"></script>
-```
+  ```
+    <div id="app"></div>
+    <script src="bundle.js"></script>
+  ```
 
 8. Criar pasta src com aquivos App.js e index.js:
 
-8.1 scr/App.js
+  8.1 scr/App.js
 
-```
-  import React from 'react';
+  ```
+    import React from 'react';
+ 
+    function App() {
+      return (
+        <h1>My app</h1>
+      );
+    }
 
-  function App() {
-    return (
-      <h1>My app</h1>
-    );
-  }
+    export default App;
+  ```
 
-  export default App;
-```
+  8.2 src/index.js
 
-8.2 src/index.js
+  ```
+    import React from 'react';
+    import {render} from 'react-dom';
 
-```
-  import React from 'react';
-  import {render} from 'react-dom';
+    import App from './App';
 
-  import App from './App';
-
-  render(<App />, document.getElementById('app'));
-```
+    render(<App />, document.getElementById('app'));
+  ```
 
 9. Criar arquivo webpack.config.js:
 
@@ -149,16 +149,16 @@
 
 11. Adicionar plugin para usar async/await:
 
-11.1 Tranform runtime
+  11.1 Tranform runtime
 
-```
-  yarn add @babel/plugin-transform-runtime
-```
+  ```
+    yarn add @babel/plugin-transform-runtime
+  ```
 
-11.2 Adicionar no babel.config.js
+  11.2 Adicionar no babel.config.js
 
-```
-  plugins: [
-    '@babel/plugin-transform-runtime'
-  ]
-```
+  ```
+    plugins: [
+      '@babel/plugin-transform-runtime'
+    ]
+  ```

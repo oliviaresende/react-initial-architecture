@@ -38,23 +38,23 @@
 
 6. Adicionar loaders:
 
-  6.1: Babel
+    6.1: Babel
 
-  ```
-    yarn add babel-loader
-  ```
+    ```
+      yarn add babel-loader
+    ```
 
-  6.2 Styles
+    6.2 Styles
 
-  ```
-    yarn add style-loader css-loader
-  ```
+    ```
+      yarn add style-loader css-loader
+    ```
 
-  6.3 Images
+    6.3 Images
  
-  ```
-    yarn add file-loader
-  ```
+    ```
+      yarn add file-loader
+    ```
 
 7. Criar pasta public com um arquivo index.html:
 

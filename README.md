@@ -35,6 +35,7 @@
     ]
   }
 ```
+
 6. Adicionar loaders:
 
 6.1: Babel
@@ -136,8 +137,9 @@
     }
   }
 ```
-
+ 
 10. Criar scripts no package.json
+
 ```
   "scripts": {
     "dev": "webpack serve --mode development",
@@ -154,6 +156,7 @@
 ```
 
 11.2 Adicionar no babel.config.js
+
 ```
   plugins: [
     '@babel/plugin-transform-runtime'
